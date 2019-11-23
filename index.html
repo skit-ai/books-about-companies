@@ -1,0 +1,820 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Blog Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .thumb-img {
+            background-repeat: no-repeat;
+        }
+
+        .apollo {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfK-RlTtE6QhQ27ulBYLvM5-9IMDQcq8gueAQrIkxa7mV99vop");
+        }
+
+        .bandhan {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRmme5IAEkx5HZ2FyaGlr4iTD4myg8S0r-4s5Y2Fee9K6xEgKtu");
+        }
+
+        .berger {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWQNpMtFoHoUY8HMqYmmJkSGQpRzngkA43e_e0ytEb9Fmy1o0r");
+        }
+
+        .bigbasket {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSRjBVHNq_DrQTXUjqJG4Hxz71FzLR717wjx30LH7nkYjAXCCT");
+        }
+
+        .emami {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRO4AuvzL1vrDPL-Cghx_CikmmF4fag_7CntXu0CqAakhcL6din");
+        }
+
+        .essel {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQLn5BrAvR_ckkG0TsEPuZQtI7R56O8dsVcNnlJojPWtgbzIb7C");
+        }
+
+        .flipkart {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwJvY5JVv3rUP2EuEw7LjSY-UYTtNPEX8JF2kTQVwRKdvMR5J5");
+        }
+
+        .haldiram {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTayVQdjSx-GcIGT1cldTOb0A9zTzy6V2U_FEcUY18jriUSDwu5");
+        }
+
+        .havells {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEA80Ej-GsjVn85Qd-b_7e5HW1TDHfg6ThMZGAofNgb1XVS5Cr");
+        }
+
+        .hdfc-1 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYqygTgRa3U_f-5Ca4P_Q8atc1z3fNk-xpG00HYe3ajXNdTIFE");
+        }
+
+        .hdfc-2 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZAhYfjw9fnsEXbbZ0FdnRRSqmu6Me_L2wGYsmjMtTDaVgLu8R");
+        }
+
+        .indigo {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMU5N6H21-Rdaywq8MsLgQpF5HoNq4pmKdjX-jo9YwvmjsqhXl");
+        }
+
+        .maruti {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlyIPnSRfimlcU-absgfgxKNilIj34bjtMf9KQbT-RHn03VmgQ");
+        }
+
+        .network18 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTcLm7FxVTUNwNT-FEIGJPkNLcXwcktKu5Yjh7bFpUPndPKxN8s");
+        }
+
+        .starindia {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPogSIvucbQOQ3UUKj3P_6CRQq1auzPHU8NSAqGM94DES-2YZg");
+        }
+
+        .tata-1 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxDvXF6ATA7tNcUlPpb3-mB88ksON1OYsP4R1RQGv3WByjW8wb");
+        }
+
+        .tata-2 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSVhQdkHSBhz00d1ONk3xjIVrVaGUVhFcgZSmQMeFumr_wny9L6");
+        }
+
+        .tata-3 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7gZASxzUfGRckM2izCVVcU5wERJb--OVgIgz5w0MtldMOTDL6");
+        }
+
+        .ttk {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTP5QPqm3lfcVBOgTQOyBwtIgozOQZ-sfrrvC9SaN2Ot_gTji3P");
+        }
+
+        @media (min-width: 200px) {
+            .thumb-img {
+                width: 100%;
+                height: 300px;
+                background-position: top;
+                background-size: 100%;
+            }
+
+            .thumb-container {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .thumb-container {
+                width: auto;
+            }
+            .thumb-img {
+                width: 150px;
+                height: 90%;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.3/examples/blog/blog.css" rel="stylesheet">
+</head>
+<body>
+
+<!--<main role="main" class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-8 blog-main">-->
+            <!--<h3 class="pb-3 mb-4 font-italic border-bottom">-->
+                <!--Flipkart-->
+            <!--</h3>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</main>-->
+
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <!--<div class="col-4 pt-1">-->
+                <!--<a class="text-muted" href="#">Subscribe</a>-->
+            <!--</div>-->
+            <div class="col-12 text-center">
+                <a class="blog-header-logo text-dark" href="#">Books about companies</a>
+            </div>
+            <!--<div class="col-4 d-flex justify-content-end align-items-center">-->
+                <!--<a class="text-muted" href="#">-->
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>-->
+                <!--</a>-->
+                <!--<a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>-->
+            <!--</div>-->
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2" id="nav">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" href="#apollo">Apollo Tyres</a>
+            <a class="p-2 text-muted" href="#bandhan">Bandhan bank</a>
+            <a class="p-2 text-muted" href="#berger">Berger paints</a>
+            <a class="p-2 text-muted" href="#bigbasket">Bigbasket</a>
+            <a class="p-2 text-muted" href="#emami">Emami group</a>
+            <a class="p-2 text-muted" href="#essel">Essel group</a>
+            <a class="p-2 text-muted" href="#flipkart">Flipkart</a>
+            <a class="p-2 text-muted" href="#haldiram">Haldiram</a>
+            <a class="p-2 text-muted" href="#havells">Havells</a>
+            <a class="p-2 text-muted" href="#hdfc">HDFC bank</a>
+            <a class="p-2 text-muted" href="#indigo">IndiGo</a>
+            <a class="p-2 text-muted" href="#maruti">Maruti Udyog</a>
+            <a class="p-2 text-muted" href="#network18">Network18</a>
+            <a class="p-2 text-muted" href="#starindia">Star India</a>
+            <a class="p-2 text-muted" href="#tata">Tata group</a>
+            <a class="p-2 text-muted" href="#ttk">TTK group</a>
+        </nav>
+    </div>
+
+    <div class="row" id="apollo">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Apollo Tyres
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img apollo"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Man Behind the Wheel: How Onkar S. Kanwar Created a Global Giant</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Apollo Tyres </span>•<span> Tim Bouquet</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">The Man Behind the Wheel is the insightful and exciting story of a highly successful company and its creator as he takes us on a journey.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Man-Behind-Wheel-Kanwar-Created/dp/8129145006" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/33829444-the-man-behind-the-wheel" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The Man Behind the Wheel: How Onkar S. Kanwar Created a Global Giant,' a book on Apollo Tyres written by Tim Bouquet.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="bandhan">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Bandhan bank
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img bandhan"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Bandhan: The Making of a Bank</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Bandhan bank </span>•<span> Tamal Bandyopadhyay</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">This is the story of Bandhan, the only bank that emerged in eastern India after Independence.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Bandhan-Making-Bank-Tamal-Bandyopadhyay/dp/8184004982" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/30526930-bandhan" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Bandhan: The Making of a Bank,' a book on Bandhan bank written by Tamal Bandyopadhyay.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="berger">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Berger paints
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img berger"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Unstoppable: Kuldip Singh Dhingra and the Rise of Berger Paints</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Berger paints </span>•<span> Sonu Bhasin</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">Kuldip Singh Dhingra, the patriarch of the Dhingra family and the man credited with building Berger Paints, has remained a mystery. He is low-profile, eschews media and continues to operate from a small office in Delhi. In this candid and captivating biography Kuldip reveals his story for the first time.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Unstoppable-Kuldip-Dhingra-Berger-Paints/dp/0670090549" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/47536948-unstoppable" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Unstoppable: Kuldip Singh Dhingra and the Rise of Berger Paints,' a book on Berger paints written by Sonu Bhasin.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="bigbasket">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Bigbasket
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img bigbasket"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Saying No to Jugaad: The Making of Bigbasket</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Bigbasket </span>•<span> M S Subramanian and T. N. Hari</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">Saying No to Jugaad is a riveting account of how the start-up ecosystem in India evolved rapidly in the last 10 years.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Saying-No-Jugaad-Making-Bigbasket-ebook/dp/B07WXNKL11" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/47971695-saying-no-to-jugaad" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Saying No to Jugaad: The Making of Bigbasket,' a book on Bigbasket written by M S Subramanian and T. N. Hari.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="emami">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Emami group
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img emami"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Business: The Emami Way</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Emami group </span>•<span> R.S. Agarwal and R.S. Goenka</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">This book tells the story of that odyssey with candour and sagacity. There are short stories that deliver home truths, snippets that delight and quotes that enlighten. Business: The Emami Way is, in short, an MBA in an easy-to-understand handbook.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Business-Emami-Way-R-S-Agarwal/dp/935177841X" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/en/book/show/30752430-business" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Business: The Emami Way,' a book on Emami group written by R.S. Agarwal and R.S. Goenka.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="essel">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Essel Group
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img essel"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Z Factor: My Journey as the Wrong Man at the Right Time</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Essel Group </span>•<span> Pranjal Sharma and Subhash Chandra</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">This is an unusually candid memoir of a truly desi self-made businessman who came to Delhi at age twenty with seventeen rupees in his pocket. Today, he has a net worth of $6.3 billion and annual group revenues of about $3 billion.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Factor-Journey-Wrong-Right-Time/dp/9351773248" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/en/book/show/28793528-the-z-factor" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The Z Factor: My Journey as the Wrong Man at the Right Time,' a book on Essel Group written by Pranjal Sharma and Subhash Chandra.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="flipkart">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Flipkart
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img flipkart"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Big Billion Startup - The Untold Flipkart Story</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Flipkart </span>•<span> Mihir Dalal</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">The definitive account of India’s biggest startup that redefined e-commerce, entrepreneurship and the way we shop and live.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Big-Billion-Startup-Untold-Flipkart/dp/9389109140" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/47895017-big-billion-startup---the-untold-flipkart-story" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Big Billion Startup - The Untold Flipkart Story,' a book on Flipkart written by Mihir Dalal.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="haldiram">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Haldiram
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img haldiram"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Bhujia Barons: The Untold Story of How Haldiram Built a Rs 5000-crore Empire</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Haldiram </span>•<span> Pavitra Kumar</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">In Bhujia Barons, Parvitra Kumar tells the riveting story of the Agarwal family in its entirety- a feat never managed before. It begins in dusty, benign Bikaner and traces the rise and rise of this home-grown label, now one of the most- recognized Indian brands in the world.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.com/Bhujia-Barons-Untold-Haldiram-Empire/dp/8184007558" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/en/book/show/31416028-bhujia-barons" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Bhujia Barons: The Untold Story of How Haldiram Built a Rs 5000-crore Empire,' a book on Haldiram written by Pavitra Kumar.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="havells">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Havells
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img havells"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Havells: The Untold Story of Qimat Rai Gupta</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Havells </span>•<span> Anil Rai Gupta</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">The story of a man who began his journey with Rs 10,000 and built a Rs 17,000-crore empire from beginning his career as a small trader in Delhi to building Havells, one of India’s largest electrical goods company.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Havells-Untold-Story-Qimat-Gupta/dp/0670088811" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/28870191-havells" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Havells: The Untold Story of Qimat Rai Gupta,' a book on Havells written by Anil Rai Gupta.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="hdfc-1">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                HDFC bank
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img hdfc-1"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">A Bank for the Buck: The Story of HDFC Bank</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>HDFC bank </span>•<span> Tamal Bandyopadhyay</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">The Story of HDFC Bank, the new bank movement and the untold story of the making of India's most valued bank. This is the story of the birth and growth of India's most valued Bank.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Bank-Buck-Story-HDFC/dp/8184953968" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/en/book/show/17177285-a-bank-for-the-buck-the-story-of-hdfc-bank" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'A Bank for the Buck: The Story of HDFC Bank,' a book on HDFC bank written by Tamal Bandyopadhyay.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="hdfc-2">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                HDFC bank
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img hdfc-2"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">HDFC Bank 2.0</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>HDFC bank </span>•<span> Tamal Bandyopadhyay</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">Tamal Bandyopadhyay chronicles HDFC Bank’s own digital disruption exercise through the very people who drove it, narrating a story that’s as compelling as unique in India’s financial system. </p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/HDFC-Bank-2-0-Tamal-Bandyopadhyay/dp/9388423356" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/46279816-hdfc-bank-2-0" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'HDFC Bank 2.0,' a book on HDFC bank written by Tamal Bandyopadhyay.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="indigo">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                IndiGo
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img indigo"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The IndiGo Story: Inside the Upstart that Redefined Indian Aviation</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>IndiGo </span>•<span> Shelley Vishwajeet</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">The IndiGo Story is a fascinating analysis of the manner in which an unknown entity entered the perilous Indian sky and became its undisputed leader both in terms of market share and profitability.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Indigo-Story-Upstart-Redefined-Aviation/dp/9353043557" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/42512831-the-indigo-story" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The IndiGo Story: Inside the Upstart that Redefined Indian Aviation,' a book on IndiGo written by Shelley Vishwajeet.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="maruti">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Maruti Udyog
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img maruti"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Maruti Story : How A Public Sector Company Put India On Wheels</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Maruti Udyog </span>•<span> R C Bhargava</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">An extraordinary and rare insight into how a few determined entrepreneurs created an icon</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Maruti-Story-Public-Sector-Company-ebook/dp/B00B24FC0Q" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/7922554-the-maruti-story---how-a-public-sector-company-put-india-on-wheels" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The Maruti Story : How A Public Sector Company Put India On Wheels,' a book on Maruti Udyog written by R C Bhargava.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="network18">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Network18
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img network18"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Network18: The Audacious Story of a Start-up That Became a Media Empire</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Network18 </span>•<span> Indira Kannan</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">Starting from a small room in New Delhi’s Safdarjung Enclave, Television Eighteen (TV18) grew into Network18, one of India’s biggest media conglomerates spanning television, print, films, the Internet, business and general news, drama and entertainment. It’s a story of a media empire that could only have been Made in India.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Network18-Audacious-Start-up-Became-Empire/dp/0670088900" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/en/book/show/31294860-network18" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Network18: The Audacious Story of a Start-up That Became a Media Empire,' a book on Network18 written by Indira Kannan.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="starindia">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Star India
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img starindia"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Making of Star India: The Amazing Story of Rupert Murdoch's India Adventure</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Star India </span>•<span> Vanita Kohli-Khandekar</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">Vanita Kohli-Khandekar tells the thrilling story of Indian television through its most notable protagonist: Star TV.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Making-Star-India-Murdochs-Adventure/dp/0670090794" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/47190423-the-making-of-star-india" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The Making of Star India: The Amazing Story of Rupert Murdoch's India Adventure,' a book on Star India written by Vanita Kohli-Khandekar.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="tata-1">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Tata group
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img tata-1"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Tata Saga: Timeless Stories from India’s Largest Business Group</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Tata group </span>•<span> Penguin Books India</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">The Tata Saga is a collection of handpicked stories published on India's most iconic business group.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Tata-Saga-Timeless-Stories-Business/dp/0670091758" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/42187282-the-tata-saga" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The Tata Saga: Timeless Stories from India’s Largest Business Group,' a book on Tata group written by Penguin Books India.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="tata-2">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Tata group
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img tata-2"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">TITAN: Inside India’s Most Successful Consumer Brand</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Tata group </span>•<span> Vinay Kamath</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">Titan: Inside India?s Most Successful Consumer Brand takes readers from boardrooms to back rooms to reveal how a quintessential Indian brand from the house of the Tatas, not known till then for its success in the consumer goods market, reached such remarkable heights.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Titan-Inside-Indias-Successful-Consumer/dp/9350099780" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/43370262-titan" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'TITAN: Inside India’s Most Successful Consumer Brand,' a book on Tata group written by Vinay Kamath.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="tata-3">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                Tata group
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img tata-3"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">The Tata Group: From Torchbearers to Trailblazers</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>Tata group </span>•<span> Shashank Shah</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">A deepdive into the Tata universe, The Tata Group brings forth hitherto lesser-known facts and insights. It also brings you face-to-face with the most intriguing business decisions and their makers.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Tata-Group-Torchbearers-Trailblazers/dp/0670090670" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/43255662-the-tata-group" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'The Tata Group: From Torchbearers to Trailblazers,' a book on Tata group written by Shashank Shah.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row" id="ttk">
+        <div class="col-md-8 offset-md-2 blog-main">
+            <h3 class="pb-3 mb-4 border-bottom">
+                TTK group
+                <a href="#nav"><i class="fa fa-arrow-circle-up float-right"></i></a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-8 offset-md-2">
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-300 position-relative">
+                <div class="pl-2 pt-3 thumb-container">
+                    <div class="thumb-img ttk"></div>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">Disrupt and Conquer: How TTK Prestige Became a Billion-Dollar Business</h3>
+                    <strong class="d-inline-block mt-2 text-secondary"><span>TTK group </span>•<span> Sandhya Mendonca and T T K Jagannathan</span></strong>
+                    <p style="font-size: 14px;" class="mb-auto mt-4">In this book, the current chairman T.T. Jagannathan, along with Sandhya Mendonca, takes us through the journey of this extraordinary company which fought off bankruptcy and rose like a phoenix to become a highly profitable, successful entity.</p>
+                    <div class="mt-3 pt-1 d-flex justify-content-between">
+                        <a target="_blank" href="https://www.amazon.in/Disrupt-Conquer-Prestige-Billion-Dollar-Company/dp/0670090174" class="mr-5">Amazon <i class="fa fa-amazon"></i></a>
+                        <a target="_blank" href="https://www.goodreads.com/book/show/40190694-disrupt-and-conquer" class="mr-5">Goodreads <i class="fa fa-book"></i></a>
+                        <a target="_blank" href="https://twitter.com/intent/tweet?text=Read 'Disrupt and Conquer: How TTK Prestige Became a Billion-Dollar Business,' a book on TTK group written by Sandhya Mendonca and T T K Jagannathan.
+Visit https://vernacularai.github.io/booksaboutcompanies to find more books on the founding stories of multiple other Indian companies.)" class="">Share <i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="blog-footer">
+    <p>Built by <a target="_blank" href="https://twitter.com/@hackpravj/">@hackpravj</a> and <a target="_blank" href="https://in.linkedin.com/in/amreshvenugopal">@amresh</a> at <a target="_blank" href="https://vernacular.ai/">Vernacular.ai</a></p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
+
+</body>
+</html>
