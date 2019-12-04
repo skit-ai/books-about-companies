@@ -3,15 +3,16 @@
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .header-container {
     position: fixed;
     left: 0;
     background-color: white;
-     right: 0;
-    z-index: 999; 
+    right: 0;
+    z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
@@ -24,7 +25,7 @@
     user-select: none;
 }
 
-.name{
+.name {
     padding-top: 80px;
 }
 
@@ -173,8 +174,6 @@ body, h1, h2, h3, h4, h5, p, div {
     }
 }
 
-
-
 @media (min-width: 1000px) {
     .thumb-container {
         width: auto;
@@ -195,7 +194,6 @@ html {
     .nav-item>a:hover {
         color: transparent;
     }
-    
     .hamburger-container.navbar-toggler {
         background: transparent;
         border: 0;
