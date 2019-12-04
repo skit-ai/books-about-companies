@@ -29,11 +29,14 @@
     padding-top: 80px;
 }
 
+.name>div>h4 {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
 .nav-item>a {
     text-decoration: none;
 }
-
-
 
 .nav-item {
     font-size: 1.2em;
@@ -157,7 +160,6 @@ body, h1, h2, h3, h4, h5, p, div {
     width: 100%;
 }
 
-
 @media (min-width: 200px) {
     h4 {
         font-size: 20px;
@@ -177,7 +179,6 @@ body, h1, h2, h3, h4, h5, p, div {
 }
 
 @media (min-width: 700px) {
- 
     .thumb-img {
         width: auto;
         height: 300px;
@@ -213,7 +214,6 @@ html {
 }
 
 @media screen and (max-width: 991px) {
-
     #content-container {
         margin: 0 35px 0 0;
     }
